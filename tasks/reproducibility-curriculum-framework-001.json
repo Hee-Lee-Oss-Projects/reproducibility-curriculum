@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-framework-001",
+  "title": "Curriculum framework + Bloom-aligned competency map (backward design)",
+  "project": "reproducibility-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Wet-lab and translational cancer scientists are rarely taught versioning, provenance, or reproducible compute, and a meaningful fraction of preclinical cancer findings fail to replicate. Before any module is authored, the project needs a coherent framework and a Bloom-aligned competency map so every later module, assessment, and worked example aligns by backward design. The curriculum is methodological and for scientists, not patients: it contains no medical advice and presents no example result as a biological or clinical finding. Worked examples will use only open-access/aggregate/de-identified cancer data behind a binding licensing gate.",
+  "objective": "Define the six-module curriculum (motivation, versioning, provenance, containers/environments, reproducible analysis, sharing/archiving) plus a capstone, each with measurable, Bloom-aligned learning objectives derived by backward design, and fix the dual-licensing and methodological-only scope boundaries.",
+  "acceptanceCriteria": [
+    "Six modules plus capstone are defined with explicit scope boundaries and sequencing/dependencies.",
+    "Each module has 3-6 measurable, Bloom-aligned learning objectives produced by backward design (objective -> assessment -> content).",
+    "The framework states the methodological-only boundary: no medical advice, no patient-facing content, and no example result presented as a biological/clinical finding.",
+    "The framework states dual licensing: instructional content CC-BY-4.0, code/container recipes MIT.",
+    "The framework references the binding open-cancer-data & licensing gate and notes that worked examples use only open/aggregate/de-identified data with provenance on every assertion.",
+    "Document is accessible (plain language, heading structure) and i18n-ready; committed with DCO sign-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\reproducibility-curriculum\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "C:\\code\\elyos\\planning\\ROADMAP.md",
+    "The Turing Way (reproducible, ethical, collaborative data science)",
+    "Bloom's taxonomy (revised); Understanding by Design (Wiggins & McTighe)",
+    "NIH Rigor & Reproducibility guidance; Reproducibility Project: Cancer Biology"
+  ],
+  "output": "A curriculum framework document plus a Bloom-aligned competency/learning-objective map covering six modules and a capstone, committed to the project repo as the basis for the module template and all later modules.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
