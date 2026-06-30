@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-pilot-006",
+  "title": "Pilot module end-to-end: \"Containers & environments\" + 1 gated worked example",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "containers"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Before building all six modules, the project must prove the complete flow — template, CI harness, and data gate — end-to-end on one pilot module. The 'Containers & environments' module is chosen because it is the highest-leverage, most self-contained skill, it exercises the CI harness that all later modules depend on, and its worked example can use the lowest-risk allowed source (DepMap CC-BY 4.0 or fully synthetic data), making a real, low-risk end-to-end pass reachable without waiting on a teaching partner. Depends on: framework-001, datagate-002, template-004, container-ci-005, reviewers-003.",
+  "objective": "Author the 'Containers & environments' module end-to-end following the module template, with Bloom-aligned learning objectives, a lesson with all assertions cited, a runnable pinned-container exercise, one gated worked example on DepMap CC-BY 4.0 or synthetic data, a reproducibility checklist/takeaway, formative assessment, and instructor notes; pass all four reviewer sign-offs and CI; deliver to >= 1 learner or record a self-run workshop.",
+  "acceptanceCriteria": [
+    "Module complete to the template: 3-6 Bloom-aligned learning objectives, lesson narrative with all assertions cited, runnable pinned-container exercise, one gated worked example, checklist/takeaway, formative assessment, and instructor notes.",
+    "Worked example uses the lowest-risk allowed source (DepMap CC-BY 4.0 or fully synthetic data), with a committed PASS gate artifact (permitsDerivatives: true, non-identifiable); data fetched at runtime, no raw data committed.",
+    "Container builds (Docker + Apptainer) and exercise/example pass in CI (green in last scheduled run).",
+    "Signed off by Data & licensing reviewer, Domain reviewer, Educator reviewer, and Technical reviewer.",
+    "Taught or self-delivered to >= 1 learner or cohort (self-run workshop fallback acceptable) with the outcome recorded in the outcome ledger (outcomes/<event-id>.json) — or, if no learner yet, marked delivered-pending with the specific blocker surfaced.",
+    "No biological/clinical conclusion presented as a finding; module labeled 'teaching example — not a finding, not advice.'"
+  ],
+  "resources": [
+    "PLAN.md (Roadmap & milestones — M0 cold-start de-risking)",
+    "framework-001, template-004, datagate-002, container-ci-005, reviewers-003",
+    "DepMap Cancer Dependency Map (CC-BY 4.0, https://depmap.org/portal/download/)",
+    "Docker documentation (https://docs.docker.com/); Apptainer documentation (https://apptainer.org/docs/)",
+    "conda/mamba documentation; The Carpentries lesson format",
+    "Bloom's taxonomy (revised); WCAG 2.2 AA"
+  ],
+  "output": "A complete 'Containers & environments' module committed to the project repo (lesson, exercise, worked example, checklist, assessment, instructor notes), with a committed PASS gate artifact for its dataset, CI green (Docker + Apptainer), and all four reviewer sign-offs; outcome ledger entry for the first delivery.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-a11y-013",
+  "title": "Accessibility + i18n-readiness pass on published modules (WCAG 2.2 AA)",
+  "project": "reproducibility-curriculum",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "All published modules must meet WCAG 2.2 AA accessibility standards and be i18n-ready for downstream localization (required by the module template). After the M1 modules (pilot-006, versioning-008, provenance-009) are published, a dedicated accessibility and i18n-readiness audit ensures compliance is structural and verified, not aspirational. Any defects found are fixed in the same task. Depends on: pilot-006, versioning-008, provenance-009.",
+  "objective": "Perform a WCAG 2.2 AA accessibility and i18n-readiness audit on all published modules (at minimum pilot-006, versioning-008, provenance-009), document all findings, apply fixes, and commit an audit report confirming all modules are compliant.",
+  "acceptanceCriteria": [
+    "WCAG 2.2 AA audit completed on all published modules; findings documented per module with issue severity and fix applied.",
+    "All images have descriptive alt text; figures use a colorblind-safe palette; heading structure (H1/H2/H3) is correct and hierarchical; plain-language conventions followed.",
+    "Code blocks have accessible labels; link text is descriptive (not 'click here'); contrast ratios meet WCAG 2.2 AA minimums.",
+    "i18n-readiness verified: no hard-coded locale-specific strings (dates, units, currency); UI text is extractable; no directional assumptions in layout.",
+    "All accessibility defects found during audit are fixed; fixes verified not to introduce regressions.",
+    "Audit report committed to the project repo with DCO sign-off; reviewed and signed off by Educator reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Goals — accessibility and i18n-readiness)",
+    "template-004 (style/accessibility guide baseline)",
+    "WCAG 2.2 AA (https://www.w3.org/TR/WCAG22/)",
+    "axe accessibility checker (https://www.deque.com/axe/); Lighthouse accessibility audit",
+    "Carpentries accessibility checklist",
+    "Published modules: pilot-006, versioning-008, provenance-009"
+  ],
+  "output": "An ACCESSIBILITY-AUDIT.md report committed to the project repo documenting findings, fixes applied, and WCAG 2.2 AA compliance confirmation for all audited modules; Educator reviewer sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

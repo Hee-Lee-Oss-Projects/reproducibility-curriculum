@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-cohort-017",
+  "title": "Teach a pilot cohort + capture pre/post outcomes",
+  "project": "reproducibility-curriculum",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's 'delivered' criterion requires the curriculum to be taught to real learners with pre/post outcomes recorded. This is the first taught cohort: the moment the project moves from 'written' to 'delivered.' Pre/post assessment using the assessment-011 instrument enables normalized-gain measurement. Capturing >= 1 learner-produced verifiable reproducible artifact (public repo or DOI) is the primary evidence of behavioral impact. If a named partner taught the cohort, relevant tasks are updated to verifiedNeed: true. Depends on: pilot-006, assessment-011, outreach-007.",
+  "objective": "Teach >= 1 cohort (workshop or embedded course) using the curriculum; administer pre/post assessment; record >= 1 learner-produced verifiable reproducible artifact; commit outcomes to the outcome ledger with externally verifiable references.",
+  "acceptanceCriteria": [
+    ">= 1 cohort taught (workshop or embedded course) with at least the pilot module (pilot-006); pre/post assessment administered using the assessment-011 instrument at baseline and post.",
+    "Pre and post assessment results recorded in the outcome ledger (outcomes/<event-id>.json) with: cohort size, setting, date, pre scores, post scores, normalized-gain g per item and aggregate.",
+    ">= 1 learner-produced reproducible artifact verified and recorded: public repository or archived DOI whose container builds and analysis re-runs from the recorded inputs; self-reported artifacts do not count.",
+    "Outcome ledger entry committed with a verifiable external reference (public repo link, event record, or equivalent); DCO signed off.",
+    "If a teaching partner delivered the cohort, the partner's tasks are updated to verifiedNeed: true with requestor field set to the partner name/org.",
+    "If no external partner is available, a self-run workshop with >= 1 participant satisfies this criterion with the fallback clearly noted in the outcome record."
+  ],
+  "resources": [
+    "PLAN.md (Success metrics — learners, competency gain, cohorts)",
+    "pilot-006 (Containers & environments module — pilot delivery)",
+    "assessment-011 (pre/post competency assessment instrument)",
+    "outreach-007 (partner/cohort outreach — confirmed partner or fallback)",
+    "TASKS.md (cohort-017 acceptance criteria)",
+    "Outcome ledger schema (outcomes/<event-id>.json)"
+  ],
+  "output": "Outcome ledger entry (outcomes/<event-id>.json) recording the taught cohort, pre/post assessment results, normalized-gain, and >= 1 verified learner-produced reproducible artifact; committed with DCO sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "reproducibility-curriculum-sharing-014",
+  "title": "\"Sharing & archiving\" module (Zenodo, GEO/SRA, protocols.io, OSF)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "data-archiving"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Cancer researchers often lack knowledge of archiving standards, appropriate data/code repositories, licensing for shared research outputs, and how to write effective data/code-availability statements that satisfy funder and journal mandates. This module teaches the full sharing/archiving workflow using concrete, open-access tools (Zenodo, GEO/SRA, protocols.io, OSF) with a runnable exercise and instructor notes. Depends on: template-004, container-ci-005.",
+  "objective": "Author the 'Sharing & archiving' module covering Zenodo, GEO/SRA submission, protocols.io, OSF, data/code-availability statements, and output licensing following the module template, with 3-6 Bloom-aligned learning objectives, a runnable exercise, checklist/takeaway, formative assessment, and instructor notes; CI green; signed off by Educator and Domain reviewers.",
+  "acceptanceCriteria": [
+    "Module follows the template: 3-6 Bloom-aligned learning objectives, lesson narrative with all assertions cited, runnable pinned-container exercise, worked example or synthetic exercise, checklist/takeaway, formative assessment, and instructor notes.",
+    "Teaches Zenodo (depositing code/data, versioning, citing DOIs), GEO/SRA submission (at a conceptual level), protocols.io for protocol sharing, and OSF for project archiving.",
+    "Covers writing a data/code-availability statement: correct licensing (CC-BY-4.0 for content, MIT for code), choosing the right repository, and attribution requirements.",
+    "Hands-on exercise runs in a pinned container and passes CI (Docker + Apptainer); uses synthetic data; no raw cancer data committed.",
+    "No biological/clinical conclusion presented as a finding.",
+    "All lesson assertions cited; link/citation checker passes in CI.",
+    "Reviewed and signed off by Educator reviewer and Domain reviewer; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Scope — module F: sharing & archiving)",
+    "template-004 (module template)",
+    "container-ci-005 (CI harness)",
+    "Zenodo documentation (https://zenodo.org/)",
+    "NCBI GEO submission guide (https://www.ncbi.nlm.nih.gov/geo/info/submission.html)",
+    "SRA submission (https://www.ncbi.nlm.nih.gov/sra/docs/submit/)",
+    "protocols.io (https://www.protocols.io/); OSF (https://osf.io/)",
+    "Creative Commons CC-BY 4.0; MIT License"
+  ],
+  "output": "A complete 'Sharing & archiving' module committed to the project repo (lesson, exercise with synthetic data, checklist, assessment, instructor notes) with CI green (Docker + Apptainer) and Educator + Domain reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

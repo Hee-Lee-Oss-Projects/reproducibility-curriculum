@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-assessment-011",
+  "title": "Pre/post competency assessment instrument + rubric",
+  "project": "reproducibility-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Measuring behavior change — not pages written — requires a validated pre/post competency assessment instrument. The project's primary success metric is median normalized gain g=(post-pre)/(max-pre) >= 0.4 across a taught cohort. The assessment instrument must map 1:1 to the framework's learning objectives (containers, provenance, versioning) to be valid, and must have parallel pre/post forms so baseline and post scores are comparable. Without this instrument, cohort-017 cannot capture outcomes. Depends on: framework-001.",
+  "objective": "Design a pre/post competency assessment instrument with parallel forms enabling normalized-gain computation, items mapped 1:1 to the framework's Bloom-aligned learning objectives for containers, provenance, and versioning modules, and a scoring key; reviewed by the Educator reviewer for construct validity.",
+  "acceptanceCriteria": [
+    "Assessment items map 1:1 to the framework's measurable, Bloom-aligned learning objectives across the containers, provenance, and versioning modules.",
+    "Parallel pre and post forms produced, enabling normalized-gain computation g=(post-pre)/(max-pre) at the item and construct level.",
+    "Scoring key included with correct answers and partial-credit rubric where applicable.",
+    "Educator reviewer confirms construct validity: items are unambiguous, appropriately pitched for non-computational bench scientists, and measure the stated objectives.",
+    "Assessment instrument committed to the project repo in an accessible format (plain Markdown or equivalent); DCO signed off.",
+    "Instructions for administering (timing, conditions) and scoring (key, gain formula) included."
+  ],
+  "resources": [
+    "PLAN.md (Success metrics — competency gain)",
+    "framework-001 (Bloom-aligned learning objectives)",
+    "TASKS.md (assessment-011 acceptance criteria)",
+    "Bloom's taxonomy (revised) — verbs for measurable objectives",
+    "Hake (1998) normalized gain formula for pre/post instruments",
+    "The Carpentries assessment approach (https://carpentries.github.io/instructor-training/)"
+  ],
+  "output": "A pre/post competency assessment instrument (parallel forms) with scoring key and administration instructions, committed to the project repo as ASSESSMENT.md or equivalent; Educator reviewer sign-off on construct validity.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

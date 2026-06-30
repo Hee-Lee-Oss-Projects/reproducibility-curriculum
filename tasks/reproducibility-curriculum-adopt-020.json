@@ -1,0 +1,35 @@
+{
+  "id": "reproducibility-curriculum-adopt-020",
+  "title": "Secure >= 1 external adopter + record adoption evidence",
+  "project": "reproducibility-curriculum",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "External adoption is required for the curriculum to meet its M3 success metric (>= 1 confirmed external adopter that teaches or embeds the material independently). This is distinct from the authors running a workshop: it requires a named third party who uses the curriculum autonomously. Adoption evidence must be verifiable (a syllabus reference, a scheduled run, a taught fork) and recorded in the outcome ledger. Once an adopter is confirmed, that adopter's tasks are updated to verifiedNeed: true with requestor set. Depends on: trainer-018 (the kit that makes independent adoption possible) and cohort-017 (proof the curriculum has been taught).",
+  "objective": "Secure >= 1 named external adopter that teaches or embeds the curriculum independently, record adoption evidence in the outcome ledger with a verifiable external reference, and update relevant task fields to verifiedNeed: true with requestor set.",
+  "acceptanceCriteria": [
+    "A named third party (institution, core facility, graduate program, or Carpentries instructor) confirms they will teach or embed the curriculum: evidenced by a syllabus reference, scheduled workshop/event record, or taught fork with a verifiable link.",
+    "Adoption evidence committed to the outcome ledger (outcomes/<event-id>.json) with: adopter name/org, verifiable link/record, date, format (workshop/course/embedded), and scope.",
+    "Relevant tasks updated to verifiedNeed: true and requestor set to the named adopter, where applicable.",
+    "If the adopter is a Carpentries instructor, carpentries-024 (port to Carpentries Incubator) is flagged as a related next step.",
+    "Outcome ledger entry committed with DCO sign-off; reviewed and signed off by Steward."
+  ],
+  "resources": [
+    "PLAN.md (Success metrics — adoption; Governance — Steward role)",
+    "trainer-018 (instructor guide + train-the-trainer kit)",
+    "cohort-017 (first taught cohort — evidence of teachability)",
+    "TASKS.md (adopt-020 acceptance criteria)",
+    "The Carpentries Incubator (https://carpentries-incubator.org/)",
+    "ELIXIR Training; cancer-center bioinformatics cores"
+  ],
+  "output": "Outcome ledger entry (outcomes/<event-id>.json) recording the named external adopter with verifiable evidence; updated task fields (verifiedNeed: true, requestor set) for relevant tasks; Steward sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "reproducibility-curriculum-i18n-021",
+  "title": "Localize one core module (domain-qualified reviewer)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "localization"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The curriculum's i18n-readiness (established in template-004) enables localization to serve cancer researchers who are not well-served by English-only materials. Localizing one core module proves the localization process, validates the i18n-readiness of the source material, and enables M3 success metric (>= 1 module localized via domain-qualified reviewer). The target module is preferably one of the M1 core modules (e.g., versioning-008) as it will have had an accessibility pass. Risk is medium because the worked example (if any) retains its data-gate requirement in the localized version. Depends on: template-004, versioning-008.",
+  "objective": "Localize one core module (preferably versioning-008) into a target language using a domain-qualified translator/reviewer who is fluent in the target language and has cancer bioinformatics expertise; preserve CC-BY-4.0 attribution; confirm no i18n regressions in the source module.",
+  "acceptanceCriteria": [
+    "One core module (e.g., versioning-008) fully localized into a target language: all text sections (objectives, lesson, exercise instructions, checklist, assessment, instructor notes) translated.",
+    "Domain-qualified reviewer fluent in the target language and with cancer bioinformatics expertise signs off on technical accuracy and appropriateness of terminology.",
+    "Educator reviewer confirms cognitive load, accessibility, and pedagogical structure are maintained in the translated version.",
+    "If the module contains a worked example with a cancer dataset, the data gate (datagate-002) still applies: the localized example must reference the same PASS gate artifact or a new one for any additional data used.",
+    "CC-BY-4.0 attribution is preserved and correct in the localized version; original authorship credited.",
+    "i18n-readiness of the source module confirmed: no locale-specific strings or assumptions introduced; localized module committed to the repo in a language-scoped directory (e.g., modules/es/ or modules/fr/); DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Goals — i18n-readiness; Sustainability — adoption beyond the authors)",
+    "template-004 (style/accessibility guide — i18n-readiness section)",
+    "versioning-008 (primary candidate source module)",
+    "WCAG 2.2 AA (applies equally to localized content)",
+    "Creative Commons CC-BY 4.0 attribution requirements"
+  ],
+  "output": "A localized version of one core module committed to the project repo in a language-scoped directory, with domain-qualified reviewer and educator reviewer sign-offs; source module i18n-readiness confirmed.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

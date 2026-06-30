@@ -1,0 +1,35 @@
+{
+  "id": "reproducibility-curriculum-dashboard-025",
+  "title": "Outcome dashboard (cohorts, artifacts, adoptions)",
+  "project": "reproducibility-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The outcome ledger (outcomes/<event-id>.json) records taught cohorts, learner-produced reproducible artifacts, and external adoptions. A dashboard provides visibility into progress against the project's success metrics and supports reporting to stakeholders, funders, and the Elyos platform. It must read only the committed outcome ledger (no live data, no external API calls at build time) and produce a static page suitable for GitHub Pages or similar deployment. This is a backlog item — meaningful data only exists after cohorts are taught.",
+  "objective": "Build an outcome dashboard that reads the committed outcome ledger (outcomes/*.json), displays progress metrics (cohorts taught, learner-produced reproducible artifacts, external adoptions, competency-gain statistics) against the project's success targets, and deploys as a static page; pnpm build/test/lint green; MIT license.",
+  "acceptanceCriteria": [
+    "Dashboard reads outcomes/*.json and displays: cohorts taught (count, dates, sizes), learner-produced reproducible artifacts (count, verifiable links), external adoptions (count, names/links), and competency-gain statistics (where assessment-011 data is available).",
+    "Progress compared against the project's success metric targets (from PLAN.md Success metrics table).",
+    "No live data fetching at runtime: dashboard reads only committed outcome ledger files and builds to a static site.",
+    "pnpm build && pnpm test && pnpm lint all green; TypeScript/ESM per Elyos conventions; MIT license; DCO signed off; no secrets or credentials embedded.",
+    "Dashboard is deployable as a static page (GitHub Pages or equivalent); deployment instructions documented.",
+    "Reviewed and signed off by Technical reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Success metrics table)",
+    "Outcome ledger schema (outcomes/<event-id>.json)",
+    "Elyos TypeScript/ESM + pnpm conventions (CLAUDE.md)",
+    "GitHub Pages documentation (https://pages.github.com/)",
+    "cohort-017, adopt-020 (sources of outcome ledger entries)"
+  ],
+  "output": "An outcome dashboard committed as a PR (TypeScript/ESM static site, MIT license), reading outcomes/*.json and displaying progress against success metrics; pnpm build/test/lint green; Technical reviewer sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

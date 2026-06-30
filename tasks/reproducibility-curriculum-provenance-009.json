@@ -1,0 +1,38 @@
+{
+  "id": "reproducibility-curriculum-provenance-009",
+  "title": "\"Provenance\" module (FAIR, RO-Crate, ISA, ELN concepts)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "FAIR", "metadata"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Provenance — recording how a result was produced — is required for reproducibility and is now mandated by major funders (NIH, journal data/code-availability requirements). Cancer researchers lack training in metadata standards, the FAIR principles, RO-Crate, the ISA metadata framework, and electronic lab notebooks at a level that makes provenance machine-readable and auditable. The module targets non-computational scientists and teaches these concepts without requiring prior informatics knowledge. Depends on: template-004, container-ci-005.",
+  "objective": "Author the 'Provenance' module covering FAIR principles, RO-Crate, ISA metadata framework, and electronic lab notebook concepts following the module template, with 3-6 Bloom-aligned learning objectives, a runnable pinned-container exercise using synthetic data, checklist/takeaway, formative assessment, and instructor notes; CI green; signed off by Educator and Domain reviewers.",
+  "acceptanceCriteria": [
+    "Module follows the template: 3-6 Bloom-aligned learning objectives, lesson narrative with all assertions cited, runnable pinned-container exercise using synthetic data, checklist/takeaway, formative assessment, and instructor notes.",
+    "Teaches FAIR principles (Findable, Accessible, Interoperable, Reusable), RO-Crate (Research Object Crate) for packaging provenance metadata, ISA (Investigation/Study/Assay) metadata framework, and ELN concepts at a conceptual level suitable for bench scientists.",
+    "Hands-on exercise creates a minimal RO-Crate or ISA-structured metadata record for a synthetic dataset; runs in a pinned container and passes CI (Docker + Apptainer); no raw cancer data committed.",
+    "No biological/clinical conclusion presented as a finding.",
+    "All lesson assertions cited; link/citation checker passes in CI.",
+    "Reviewed and signed off by Educator reviewer and Domain reviewer; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Scope — module C: provenance)",
+    "template-004 (module template)",
+    "container-ci-005 (CI harness)",
+    "The Turing Way — provenance chapter (https://the-turing-way.netlify.app/)",
+    "FAIR Guiding Principles (Wilkinson et al., 2016, https://doi.org/10.1038/sdata.2016.18)",
+    "RO-Crate specification (https://www.researchobject.org/ro-crate/)",
+    "ISA framework (https://isa-tools.org/)",
+    "NIH Rigor & Reproducibility guidance"
+  ],
+  "output": "A complete 'Provenance' module committed to the project repo (lesson, exercise with synthetic data, checklist, assessment, instructor notes) with CI green (Docker + Apptainer) and Educator + Domain reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

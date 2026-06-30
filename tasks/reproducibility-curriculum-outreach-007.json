@@ -1,0 +1,34 @@
+{
+  "id": "reproducibility-curriculum-outreach-007",
+  "title": "Partner/cohort outreach + pilot teaching plan",
+  "project": "reproducibility-curriculum",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "The project's 'delivered' criterion requires the curriculum to be taught to real learners with outcomes recorded. Without a named teaching partner or cohort, all tasks carry verifiedNeed: false. Outreach must begin in M0 — before the pilot module is complete — so a partner can be lined up for the first taught delivery. Candidate channels include cancer-center bioinformatics/training cores, graduate programs, The Carpentries Incubator, ELIXIR bioinformatics training networks, The Turing Way community, and pediatric-sarcoma research consortia. A self-run workshop is an acceptable fallback for M0.",
+  "objective": "Identify and contact candidate teaching/adoption partners, document a shortlist with rationale and contact approach, draft a pilot teaching plan (format, timing, audience, fallback), and open >= 1 outreach thread with a named candidate.",
+  "acceptanceCriteria": [
+    ">= 1 outreach thread opened with a named candidate partner (bioinformatics core, graduate program, Carpentries, ELIXIR, or equivalent); evidence committed (e.g., reference to email, issue, or public record).",
+    "Candidate channel shortlist documented with rationale for each channel and the contact approach used.",
+    "Pilot teaching plan drafted: proposed format (workshop or embedded course), session count, estimated audience size and profile, proposed timing, and self-run workshop fallback if no partner is secured before M0 closes.",
+    "Document committed to the project repo with DCO sign-off.",
+    "If a partner confirms, the GOVERNANCE.md requestor field and relevant task verifiedNeed fields are updated to reflect confirmed status."
+  ],
+  "resources": [
+    "PLAN.md (Problem & beneficiaries — Partner org; Governance — Steward role)",
+    "The Carpentries Incubator (https://carpentries-incubator.org/)",
+    "ELIXIR Training (https://elixir-europe.org/platforms/training)",
+    "The Turing Way community (https://the-turing-way.netlify.app/)",
+    "Cancer-center bioinformatics core contacts (institution-specific)"
+  ],
+  "output": "A PARTNERS.md document committed to the project repo listing the outreach shortlist, contact approach, pilot teaching plan, and evidence of >= 1 outreach thread opened; updated to reflect any confirmed partner commitments.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

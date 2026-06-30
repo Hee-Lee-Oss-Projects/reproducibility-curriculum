@@ -1,0 +1,38 @@
+{
+  "id": "reproducibility-curriculum-datagate-002",
+  "title": "Open-cancer-data & licensing/identifiability gate + DATASET-CATALOG.md",
+  "project": "reproducibility-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "data-governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Before any worked example can be authored, a binding licensing and identifiability gate must be in place to prevent non-open or identifiable patient data from reaching learners. The gate formalizes ALLOW/FLAG/DENY rules for cancer data sources and creates a CI-enforced catalog so the constraint is structural, not aspirational. COSMIC and OncoKB are explicitly flagged as non-commercial (excluded as example data); dbGaP, EGA, and all controlled-access or identifiable sources are categorically denied. This task is a blocking prerequisite for every task that touches a real cancer dataset (pilot-006, analysis-010, examples-015, capstone-016, workflows-022).",
+  "objective": "Define and document the binding open-cancer-data & licensing/identifiability gate criteria, create DATASET-CATALOG.md with ALLOW/FLAG/DENY entries for all candidate sources, and produce a CI catalog validator that asserts every example references only a PASS-gate entry.",
+  "acceptanceCriteria": [
+    "Encodes the binding guardrail: open-access/aggregate/de-identified data ONLY; dbGaP, EGA, controlled-access, individual-level, and identifiable patient data are categorically DENIED — rejected, not escalated.",
+    "Objective PASS criterion documented: license on the ALLOW list AND license.permitsDerivatives: true with cited clause/URL AND identifiability classified as none, aggregate, or deidentified. Missing evidence, non-commercial terms, controlled access, or any identifiability signal = FLAG/EXCLUDE.",
+    "DATASET-CATALOG.md created with ALLOW entries (GDC open tier, DepMap CC-BY 4.0, GEO/SRA per-series, cBioPortal public studies, ICGC open tier, Ensembl, gnomAD, synthetic/simulated), FLAG entries (COSMIC, OncoKB — non-commercial, excluded as example data sources), and DENY entries (dbGaP, EGA, controlled-access/identifiable).",
+    "Per-entry provenance requirements documented: source URL + version + retrieval date + license id/URL + committed snapshot (SHA-256 + Wayback URL) + identifiability classification + required attribution string.",
+    "CI catalog validator implemented: asserts every worked example references only a catalog entry with a committed PASS gate artifact and permitsDerivatives: true and non-identifiable classification.",
+    "A committed, reviewable PASS/FLAG/EXCLUDE artifact format defined; at least one example PASS artifact included for DepMap CC-BY 4.0.",
+    "Document and validator committed with DCO sign-off; reviewed and signed off by Data & licensing reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Data, licensing & compliance section)",
+    "DATASET-CATALOG.md (to be created by this task)",
+    "GDC open-access tier documentation (https://gdc.cancer.gov/access-data/data-access-processes-and-tools)",
+    "DepMap CC-BY 4.0 license (https://depmap.org/portal/download/)",
+    "COSMIC license (non-commercial) — excluded as example data source",
+    "Creative Commons CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+    "NIH Rigor & Reproducibility guidance"
+  ],
+  "output": "DATASET-CATALOG.md committed to the project repo with ALLOW/FLAG/DENY entries and per-entry gate artifacts; a CI catalog validator (TypeScript/ESM, MIT license) that gates every worked example against the catalog; and a documented gate procedure and provenance model.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

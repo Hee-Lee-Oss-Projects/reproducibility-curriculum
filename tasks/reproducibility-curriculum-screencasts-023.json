@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-screencasts-023",
+  "title": "Screencasts/video walkthroughs with captions",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Video walkthroughs with captions improve accessibility and learning for non-computational scientists who benefit from seeing tools demonstrated in context. They are particularly valuable for the hands-on exercises (container setup, git operations, Quarto rendering) where seeing the correct terminal output is as important as the written instructions. Captions and transcripts are required for WCAG 2.2 AA compliance. This is a backlog item because it requires the core modules to be stable before recording.",
+  "objective": "Produce screencast video walkthroughs for core module hands-on exercises (at minimum containers/environments and versioning), with accurate captions and downloadable transcripts meeting WCAG 2.2 AA requirements; reviewed by Educator reviewer.",
+  "acceptanceCriteria": [
+    "Video walkthroughs produced for at least two core module exercises (containers/environments and versioning at minimum).",
+    "All videos include accurate, human-reviewed captions synchronized to the audio.",
+    "Downloadable transcripts provided for all videos.",
+    "Accessibility: WCAG 2.2 AA compliant — captions present, no audio-only information, colorblind-safe screen content, transcript available.",
+    "Videos are hosted on an accessible platform (e.g., YouTube with captions, Zenodo for the transcript/transcript file) and linked from the module pages.",
+    "Reviewed and signed off by Educator reviewer; DCO signed off on any committed transcript files."
+  ],
+  "resources": [
+    "PLAN.md (Goals — accessible; Notes: screencasts/video walkthroughs with captions)",
+    "TASKS.md (screencasts-023 notes — captions + transcripts required)",
+    "WCAG 2.2 AA — 1.2.2 Captions (Prerecorded), 1.2.3 Audio Description",
+    "Published modules: pilot-006, versioning-008",
+    "OBS Studio or equivalent for screencast recording",
+    "YouTube auto-captions as a starting point (must be human-reviewed and corrected)"
+  ],
+  "output": "Screencast video walkthroughs for >= 2 core module exercises with accurate captions and transcripts, linked from the module pages; WCAG 2.2 AA compliance confirmed; Educator reviewer sign-off.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
