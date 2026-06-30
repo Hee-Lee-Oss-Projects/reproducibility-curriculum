@@ -1,0 +1,37 @@
+{
+  "id": "reproducibility-curriculum-capstone-016",
+  "title": "Capstone: make a small open-cancer-data analysis fully reproducible",
+  "project": "reproducibility-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "cancer-data"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The capstone is an authentic-assessment task where learners integrate all curriculum skills: they take a small open-cancer-data analysis and produce a fully reproducible artifact (pinned container + literate analysis + provenance + data/code-availability statement), graded against the checklist-012 rubric. A reference solution is provided to make the capstone self-deliverable and CI-verifiable. The source dataset must pass the data gate (datagate-002) before the capstone is authored. Depends on: datagate-002, analysis-010, checklist-012, container-ci-005.",
+  "objective": "Build and document the capstone assignment and a reference solution: learners make a small open-cancer-data analysis fully reproducible (pinned container + literate analysis + provenance + data/code-availability statement), graded against checklist-012; reference solution builds and re-runs green in CI; signed off by Data & licensing, Domain, and Technical reviewers.",
+  "acceptanceCriteria": [
+    "Capstone assignment instructions are clear, accessible, and suitable for a non-computational bench scientist; describe the expected deliverable: pinned container + literate analysis + provenance record + data/code-availability statement.",
+    "Grading rubric references checklist-012 with explicit criteria and point allocation; scoring key for instructors included.",
+    "Reference solution implements a small methodological open-cancer-data analysis: pinned container (Docker + Apptainer), literate document (Quarto or R Markdown or Jupyter), RO-Crate or equivalent provenance, and a filled-in data/code-availability statement.",
+    "Source dataset for the reference solution has a committed PASS gate artifact (datagate-002 criteria); no raw data committed; data fetched at runtime in bounded slices.",
+    "Reference solution builds and re-runs from scratch in CI (Docker + Apptainer); example renders green; CI catalog validator passes.",
+    "Reference solution presents no biological/clinical conclusion as a finding; labeled 'teaching example — not a finding, not advice.'",
+    "Reviewed and signed off by Data & licensing reviewer, Domain reviewer, and Technical reviewer; code MIT licensed; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Scope — capstone; Solution approach)",
+    "datagate-002, analysis-010, checklist-012, container-ci-005",
+    "DepMap (CC-BY 4.0) or GDC open-tier as reference solution dataset",
+    "Quarto (https://quarto.org/); R Markdown; Jupyter",
+    "RO-Crate specification (https://www.researchobject.org/ro-crate/)",
+    "TASKS.md (capstone-016 acceptance criteria)"
+  ],
+  "output": "Capstone assignment instructions, grading rubric, and a reference solution (pinned container + literate analysis + provenance + availability statement) committed as a PR; CI green; Data & licensing + Domain + Technical reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

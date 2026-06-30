@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-checklist-012",
+  "title": "Reproducibility checklist + data/code-availability statement template",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "One of the curriculum's goals is to give learners reusable artifacts they keep after the course. A reproducibility checklist aligned to module objectives reinforces the skills taught and gives learners a concrete tool for their own work. A fill-in data/code-availability statement template addresses the growing mandate from funders and journals for explicit statements of where data and code can be accessed. Both artifacts turn the course into durable tools. Depends on: framework-001.",
+  "objective": "Create a concise, reusable reproducibility checklist aligned to the curriculum's module learning objectives and a fill-in data/code-availability statement template referencing open archiving options (Zenodo, GEO/SRA, OSF) and correct licensing (CC-BY-4.0, MIT); accessible and i18n-ready.",
+  "acceptanceCriteria": [
+    "Reproducibility checklist is concise, actionable, and aligned to the module learning objectives (covering at minimum: containers/environments, versioning, provenance, reproducible analysis, and data/code sharing).",
+    "Checklist is structured so learners can use it for their own work immediately after the course (not just a course artifact).",
+    "Data/code-availability statement template is fill-in with slots for: dataset/code identifier, repository (Zenodo/GEO/SRA/OSF/GitHub), access date, license, and attribution; includes example completed statements.",
+    "Template references open archiving options with URLs and notes on choosing the appropriate repository for each data/code type.",
+    "Both documents are standalone, accessible (WCAG 2.2 AA — heading structure, alt text if figures used), and i18n-ready; committed to the project repo with DCO sign-off.",
+    "Reviewed and signed off by Domain reviewer and Educator reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Scope — reusable durable artifacts)",
+    "framework-001 (learning objectives per module)",
+    "TASKS.md (checklist-012 acceptance criteria)",
+    "Zenodo (https://zenodo.org/); GEO submission guide; SRA submission; OSF (https://osf.io/)",
+    "NIH data sharing policy; journal data/code-availability statement requirements",
+    "The Turing Way — open data chapter"
+  ],
+  "output": "REPRODUCIBILITY-CHECKLIST.md and AVAILABILITY-STATEMENT-TEMPLATE.md committed to the project repo, accessible, i18n-ready, and signed off by Domain and Educator reviewers.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

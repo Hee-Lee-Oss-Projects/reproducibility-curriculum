@@ -1,0 +1,37 @@
+{
+  "id": "reproducibility-curriculum-versioning-008",
+  "title": "\"Versioning\" module (git, data/protocol versioning, DOIs)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "version-control"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Cancer researchers routinely lose analysis history through undocumented environments, ad-hoc spreadsheet tracking of protocols, and overwritten data files. Version control for code, data, and protocols is a foundational reproducibility skill that is rarely taught to bench scientists. This module teaches git basics, data/protocol versioning strategies, and DOI-based archiving in plain language, with a runnable container-based exercise and a synthetic or low-risk worked example. Depends on: template-004, container-ci-005.",
+  "objective": "Author the 'Versioning' module covering git for code, data/protocol versioning strategies, and DOI-based archiving (Zenodo, OSF) following the module template, with 3-6 Bloom-aligned learning objectives, a runnable pinned-container exercise, a worked example or synthetic exercise, checklist/takeaway, formative assessment, and instructor notes; CI green; signed off by Educator and Technical reviewers.",
+  "acceptanceCriteria": [
+    "Module follows the template: 3-6 Bloom-aligned learning objectives, lesson narrative with all assertions cited, runnable pinned-container exercise, worked example or synthetic exercise, checklist/takeaway, formative assessment, and instructor notes.",
+    "Teaches git for code versioning (init, commit, branch, tag, remote), data/protocol versioning strategies (version-named files, DVC, OSF versions), and DOI-based archiving via Zenodo and OSF.",
+    "Hands-on exercise runs in a pinned container and passes CI (Docker + Apptainer); if a real dataset is used it has a committed PASS gate artifact; otherwise a synthetic dataset is used.",
+    "No raw data committed; no biological/clinical conclusion presented as a finding.",
+    "All lesson assertions cited; link/citation checker passes in CI.",
+    "Reviewed and signed off by Educator reviewer and Technical reviewer; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Scope — module B: versioning)",
+    "template-004 (module template)",
+    "container-ci-005 (CI harness)",
+    "The Turing Way — version control chapter (https://the-turing-way.netlify.app/)",
+    "Software Carpentry — Version Control with Git (https://swcarpentry.github.io/git-novice/)",
+    "Zenodo (https://zenodo.org/); OSF (https://osf.io/)",
+    "Git documentation (https://git-scm.com/doc)"
+  ],
+  "output": "A complete 'Versioning' module committed to the project repo (lesson, exercise, worked example or synthetic exercise, checklist, assessment, instructor notes) with CI green (Docker + Apptainer) and Educator + Technical reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

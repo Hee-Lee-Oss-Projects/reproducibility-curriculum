@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-template-004",
+  "title": "Module template + style/accessibility guide (WCAG 2.2 AA, i18n-ready)",
+  "project": "reproducibility-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every curriculum module must follow a consistent, quality-structural template so modules are cheap and uniform to author. The template instantiates the seven required sections, a style guide, WCAG 2.2 AA accessibility requirements, and i18n-readiness conventions so that quality is structural rather than per-author. Baking accessibility and i18n into the template from M0 prevents expensive retrofit later. The template depends on the framework (framework-001) and is a blocking prerequisite for all module authoring tasks.",
+  "objective": "Create the canonical module template with all seven required sections and a companion style/accessibility guide covering WCAG 2.2 AA compliance and i18n-readiness conventions, ready to serve as the basis for all subsequent modules.",
+  "acceptanceCriteria": [
+    "Template includes all seven required sections: (1) learning objectives, (2) lesson narrative, (3) hands-on exercise, (4) worked example, (5) checklist/takeaway artifact, (6) formative assessment, and (7) instructor notes.",
+    "Each section has placeholder text, instructions, and an example showing the expected content and length.",
+    "Style guide covers heading structure, alt-text requirements, colorblind-safe figure guidance (specific palette recommendation), plain-language conventions for non-computational scientists, and inline citation format.",
+    "WCAG 2.2 AA requirements enumerated for each section type (text, code blocks, figures, exercises).",
+    "i18n-readiness guidelines documented: no hard-coded locale-specific strings in examples; text extractable for translation; date/unit/number formats locale-neutral.",
+    "Template is committed to the project repo and references framework-001; DCO signed off; reviewed and signed off by Educator reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Solution approach & architecture — Curriculum structure)",
+    "framework-001 (curriculum framework + competency map)",
+    "The Carpentries Workbench lesson template (https://carpentries.github.io/workbench/)",
+    "WCAG 2.2 AA (https://www.w3.org/TR/WCAG22/)",
+    "Bloom's taxonomy (revised); Understanding by Design (Wiggins & McTighe)",
+    "The Turing Way style guide (https://the-turing-way.netlify.app/)"
+  ],
+  "output": "A canonical MODULE-TEMPLATE.md and STYLE-GUIDE.md committed to the project repo, defining the seven required sections with placeholder content and the style, accessibility, and i18n conventions all module authors must follow.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

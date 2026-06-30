@@ -1,0 +1,35 @@
+{
+  "id": "reproducibility-curriculum-carpentries-024",
+  "title": "Port to The Carpentries Incubator lesson format",
+  "project": "reproducibility-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The Carpentries Incubator is a major distribution and adoption channel for domain-specific training materials, with an established instructor community and lesson-quality review process. Porting the curriculum to the Carpentries Workbench format (Sandpaper + Pegboard toolchain) enables submission to the Incubator and adoption by Carpentries-trained instructors globally. The curriculum is already designed to be Carpentries-compatible (Carpentries-style pedagogy, formative assessment, live coding), making the port primarily a format conversion. This is a backlog item conditional on the Carpentries adoption path being chosen.",
+  "objective": "Port all core curriculum modules to The Carpentries Workbench lesson format (Sandpaper/Pegboard), complete Carpentries lesson metadata, verify the lesson builds successfully with the Carpentries toolchain, and open a PR suitable for Carpentries Incubator submission.",
+  "acceptanceCriteria": [
+    "All core modules ported to Carpentries Workbench format: Markdown source files restructured to Sandpaper conventions (episodes/, learners/, instructors/, profiles/).",
+    "Lesson builds successfully with the Carpentries Workbench toolchain (sandpaper::build_lesson() or equivalent); no build errors.",
+    "Carpentries lesson metadata completed: config.yaml with lesson title, description, instructor names, learner profiles, and required software.",
+    "All existing acceptance criteria (WCAG 2.2 AA accessibility, i18n-readiness, CI green for exercises) maintained in the Carpentries format.",
+    "A PR opened against the Elyos Projects repo (and optionally a Carpentries Incubator submission PR) with the Carpentries-format lesson; CI green; code MIT licensed; DCO signed off.",
+    "Reviewed and signed off by Educator reviewer; Technical reviewer confirms CI green."
+  ],
+  "resources": [
+    "PLAN.md (Dependencies — The Carpentries; Solution approach — Carpentries-compatible authoring)",
+    "The Carpentries Workbench (https://carpentries.github.io/workbench/)",
+    "Sandpaper toolchain (https://carpentries.github.io/sandpaper/)",
+    "Carpentries Incubator submission guide (https://github.com/carpentries-incubator/proposals)",
+    "All published core modules (pilot-006, versioning-008, provenance-009, analysis-010, sharing-014)"
+  ],
+  "output": "A PR containing all core curriculum modules in Carpentries Workbench format, with Carpentries lesson metadata, a working build, and CI green; Educator + Technical reviewer sign-offs; optionally a Carpentries Incubator submission PR.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

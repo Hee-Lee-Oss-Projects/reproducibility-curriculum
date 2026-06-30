@@ -1,0 +1,34 @@
+{
+  "id": "reproducibility-curriculum-refresh-019",
+  "title": "Container/dependency refresh process + staleness pipeline",
+  "project": "reproducibility-curriculum",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "containers"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Container recipes and pinned dependency versions become stale as base images are updated and packages release new versions. Bit-rot — exercises that silently stop building — is rated as a high-likelihood risk in PLAN.md. A documented staleness pipeline converts CI failures to maintenance tasks automatically so the maintainer never has to manually monitor for drift. The process must identify a steward responsible for running periodic refreshes. Depends on: container-ci-005.",
+  "objective": "Document the container/dependency refresh process and staleness pipeline: how scheduled CI detects upstream base-image drift, how CI failures generate maintenance issues/tasks, how a steward handles the refresh, and what the version-pinning update procedure is.",
+  "acceptanceCriteria": [
+    "Staleness detection process documented: scheduled CI rebuild configuration, what a 'stale' detection looks like (base-image digest mismatch or package-version conflict), and how the CI marks the affected lesson as stale.",
+    "Process for converting CI staleness failures to maintenance tasks documented (e.g., CI failure -> auto-creates GitHub issue with a 'stale-lesson' label -> triaged to a maintenance task).",
+    "Version-pinning update procedure documented step-by-step: how to update a base-image digest, how to regenerate a conda lockfile, how to verify the updated recipe passes CI before marking the lesson current.",
+    "Steward role and responsibilities for the refresh process identified: who owns it, how often periodic reviews are scheduled, and what the escalation path is if a refresh introduces a breaking change.",
+    "Document committed to the project repo with DCO sign-off; reviewed and signed off by Maintainer and Technical reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Risks & mitigations — bit-rot; Sustainability & maintenance)",
+    "container-ci-005 (CI harness — scheduled rebuild configuration)",
+    "Docker base-image pinning by digest (https://docs.docker.com/engine/reference/commandline/pull/#pull-an-image-by-digest)",
+    "conda/mamba lockfile documentation",
+    "GitHub Actions scheduled workflows documentation"
+  ],
+  "output": "REFRESH-PROCESS.md committed to the project repo documenting the staleness pipeline, version-pinning update procedure, and steward responsibilities; Maintainer and Technical reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

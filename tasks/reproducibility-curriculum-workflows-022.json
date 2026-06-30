@@ -1,0 +1,35 @@
+{
+  "id": "reproducibility-curriculum-workflows-022",
+  "title": "Advanced module: workflow managers (Nextflow/Snakemake)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "workflow-management"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Workflow managers (Nextflow, Snakemake) are increasingly required for reproducible multi-step analyses in cancer research, especially for bioinformatics pipelines. This advanced module is deferred from M1 to the backlog because the core curriculum covers only a conceptual introduction to workflow managers — the advanced module requires more advanced learners and a larger time investment. It should only be taken on after the core modules are published and a teaching cohort is available. Any worked example must pass the data gate (datagate-002).",
+  "objective": "Author an advanced module on workflow managers (Nextflow and/or Snakemake) targeted at cancer researchers with some computational background, with a runnable container-based exercise and a gated worked example on an open cancer dataset; CI green; reviewed by Educator, Domain, Data & licensing, and Technical reviewers.",
+  "acceptanceCriteria": [
+    "Module covers Nextflow and/or Snakemake at a depth appropriate for bench scientists who have completed the core curriculum and are ready for multi-step pipeline automation.",
+    "At least one gated worked example on an open cancer dataset with a committed PASS gate artifact (datagate-002 criteria: permitsDerivatives: true, non-identifiable); data fetched at runtime; no raw data committed.",
+    "Hands-on exercise runs in a pinned container and passes CI (Docker + Apptainer).",
+    "Example is purely methodological; labeled 'teaching example — not a finding, not advice.'",
+    "All lesson assertions cited; link/citation checker passes in CI.",
+    "Reviewed and signed off by Educator, Domain, Data & licensing, and Technical reviewers; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Scope — backlog; workflow managers deferred from M1)",
+    "Nextflow documentation (https://www.nextflow.io/docs/latest/)",
+    "Snakemake documentation (https://snakemake.readthedocs.io/)",
+    "template-004, container-ci-005, datagate-002",
+    "The Turing Way — reproducible pipelines chapter"
+  ],
+  "output": "A complete advanced 'Workflow managers' module committed to the project repo with CI green, gated worked example (PASS gate artifact), and all four reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

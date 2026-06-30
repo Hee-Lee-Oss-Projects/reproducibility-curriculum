@@ -1,0 +1,38 @@
+{
+  "id": "reproducibility-curriculum-analysis-010",
+  "title": "\"Reproducible analysis\" module (literate programming, seeds, pinning)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "data-analysis", "literate-programming"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Ad-hoc analysis scripts with no seed setting, unpinned dependencies, and no literate programming account for a large share of unreproducible cancer findings. This module teaches literate programming (Quarto, R Markdown, Jupyter), random-seed setting, and dependency pinning using a CI-rendered runnable example. Because a real open cancer dataset is used for the worked example (requiring a committed PASS gate artifact from datagate-002), this task is risk tier medium. Depends on: template-004, container-ci-005, datagate-002.",
+  "objective": "Author the 'Reproducible analysis' module covering literate programming (Quarto/R Markdown/Jupyter), seed setting, and dependency pinning, with a runnable CI-rendered worked example on an open cancer dataset that has a committed PASS gate artifact; all assertions cited; CI green; signed off by Educator, Data & licensing, and Technical reviewers.",
+  "acceptanceCriteria": [
+    "Module follows the template: 3-6 Bloom-aligned learning objectives, lesson narrative with all assertions cited, runnable pinned-container exercise, CI-rendered worked example, checklist/takeaway, formative assessment, and instructor notes.",
+    "Teaches literate programming (Quarto, R Markdown, and/or Jupyter notebooks), random-seed setting (set.seed / numpy.random.seed / torch.manual_seed), and dependency pinning (conda lockfile, renv, or pip requirements pinned to exact versions).",
+    "Worked example uses a real open cancer dataset with a committed PASS gate artifact (datagate-002 criteria: permitsDerivatives: true, non-identifiable); data fetched at runtime in bounded slices; no raw data committed.",
+    "Example is purely methodological — it teaches how to make the analysis reproducible, presents no biological/clinical conclusion as a finding, and is labeled 'teaching example — not a finding, not advice.'",
+    "Worked example renders successfully in CI (Quarto render or papermill); container builds and passes smoke test (Docker + Apptainer); link/citation checker passes.",
+    "Reviewed and signed off by Educator reviewer, Data & licensing reviewer, and Technical reviewer; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Scope — module E: reproducible analysis)",
+    "template-004 (module template)",
+    "container-ci-005 (CI harness)",
+    "datagate-002 (open-cancer-data gate + DATASET-CATALOG.md)",
+    "Quarto (https://quarto.org/); R Markdown (https://rmarkdown.rstudio.com/); Jupyter (https://jupyter.org/)",
+    "The Turing Way — reproducible environments chapter",
+    "DepMap (CC-BY 4.0, https://depmap.org/portal/) or GDC open-tier as example dataset",
+    "NIH Rigor & Reproducibility guidance"
+  ],
+  "output": "A complete 'Reproducible analysis' module committed to the project repo (lesson, CI-rendered worked example with PASS gate artifact, exercise, checklist, assessment, instructor notes), with CI green (Docker + Apptainer) and Educator + Data & licensing + Technical reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

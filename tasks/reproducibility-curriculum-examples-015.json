@@ -1,0 +1,38 @@
+{
+  "id": "reproducibility-curriculum-examples-015",
+  "title": ">= 3 gated worked examples on distinct open cancer datasets",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "cancer-data"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "Learners benefit from seeing reproducibility skills applied across multiple distinct open cancer datasets to understand that the methods generalize. Each worked example must pass the binding data gate (datagate-002) before authoring begins. Examples span distinct sources (e.g., DepMap, a GDC/TCGA open-tier summary, a public GEO series) and are explicitly methodological — they teach how to make an analysis reproducible, not what the result means biologically. Every example fetches data at runtime, commits no raw data, and renders successfully in CI. Depends on: datagate-002, analysis-010, provenance-009.",
+  "objective": "Author >= 3 gated worked examples across distinct open cancer datasets (e.g. DepMap, GDC/TCGA open-tier summary, public GEO series), each with a committed PASS gate artifact, fetching data at runtime in bounded slices, labeled 'teaching example — not a finding, not advice,' rendering in CI, and signed off by Data & licensing, Domain, and Technical reviewers.",
+  "acceptanceCriteria": [
+    ">= 3 worked examples authored, each using a distinct open cancer dataset from a different source (e.g., DepMap CC-BY 4.0, GDC/TCGA open-tier summary, public GEO series).",
+    "Each example has a committed PASS gate artifact documenting: source URL + version + retrieval date + license id/URL + snapshot (SHA-256 + Wayback URL) + identifiability classification (aggregate or deidentified) + permitsDerivatives: true with cited clause.",
+    "Each example fetches data at runtime from official open endpoints in bounded slices; no raw data committed to the repo, CI artifacts, receipts, or logs.",
+    "Each example is purely methodological, labeled 'teaching example — not a finding, not advice,' and presents no biological/clinical conclusion as a result.",
+    "Each example renders successfully in CI (Quarto render or papermill); container builds and passes smoke test (Docker + Apptainer); CI catalog validator passes.",
+    "Reviewed and signed off by Data & licensing reviewer, Domain reviewer, and Technical reviewer for each example; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Data, licensing & compliance — ALLOW catalog)",
+    "datagate-002 (open-cancer-data gate + DATASET-CATALOG.md)",
+    "analysis-010 (reproducible analysis module — worked example patterns)",
+    "provenance-009 (provenance module — RO-Crate patterns for examples)",
+    "DepMap (CC-BY 4.0, https://depmap.org/portal/download/)",
+    "GDC open-access API (https://portal.gdc.cancer.gov/)",
+    "GEO public series (https://www.ncbi.nlm.nih.gov/geo/)",
+    "cBioPortal public studies (https://www.cbioportal.org/)"
+  ],
+  "output": ">= 3 gated worked examples committed to the project repo, each with a committed PASS gate artifact, CI-rendered, and signed off by Data & licensing, Domain, and Technical reviewers.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

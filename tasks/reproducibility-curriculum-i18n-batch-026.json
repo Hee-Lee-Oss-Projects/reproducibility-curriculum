@@ -1,0 +1,36 @@
+{
+  "id": "reproducibility-curriculum-i18n-batch-026",
+  "title": "Localize remaining modules (per-language domain reviewer)",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "localization"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "After i18n-021 proves the localization process for one module and one target language, the remaining core modules can be localized per language. Each language requires a distinct domain-qualified reviewer (fluent in the target language and with cancer bioinformatics expertise). Risk is medium because any localized module containing a worked example retains the data gate requirement. This is a backlog item: it should only proceed after i18n-021 is complete and has validated the process for at least one language.",
+  "objective": "Localize remaining core modules into additional target languages following the process established in i18n-021, with a domain-qualified reviewer for each language, CC-BY-4.0 attribution preserved, and no accessibility regressions introduced.",
+  "acceptanceCriteria": [
+    "Remaining core modules localized into >= 1 additional target language(s), following the directory structure and process established in i18n-021.",
+    "Each language has a named domain-qualified reviewer (fluent in target language + cancer bioinformatics expertise) who signs off on technical accuracy and terminology appropriateness.",
+    "Educator reviewer confirms cognitive load, accessibility, and pedagogical structure are maintained for each localized module.",
+    "If any localized module contains a worked example with a cancer dataset, the data gate (datagate-002) applies: PASS gate artifact must be committed or confirmed valid for the localized version.",
+    "CC-BY-4.0 attribution preserved and correct in all localized versions; original authorship credited.",
+    "No accessibility regressions: WCAG 2.2 AA compliance maintained; i18n-readiness of source modules confirmed.",
+    "Localized modules committed to the repo in language-scoped directories; DCO signed off."
+  ],
+  "resources": [
+    "PLAN.md (Sustainability — adoption beyond the authors; M3 — localization)",
+    "i18n-021 (process established for first localization)",
+    "template-004 (i18n-readiness conventions)",
+    "datagate-002 (applies to any localized worked example)",
+    "WCAG 2.2 AA; Creative Commons CC-BY 4.0 attribution requirements"
+  ],
+  "output": "Remaining core modules localized into >= 1 additional target language(s), committed in language-scoped directories; domain-qualified and educator reviewer sign-offs per language; no accessibility regressions.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

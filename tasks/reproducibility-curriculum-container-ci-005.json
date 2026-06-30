@@ -1,0 +1,37 @@
+{
+  "id": "reproducibility-curriculum-container-ci-005",
+  "title": "Container build/test CI harness + base-image pinning policy (Docker + Apptainer)",
+  "project": "reproducibility-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility", "containers", "CI-CD"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "All hands-on exercises and worked examples depend on reproducible, runnable containers. Without a CI harness, 'runnable' is asserted but not demonstrated; containers bit-rot silently and mislead learners. The harness builds each recipe from base images pinned by digest, runs smoke tests, and wires in the dataset-catalog validator, link/citation checker, and executable-example renderer so that a broken example fails the build. Bench scientists run on HPC, so Apptainer/Singularity definitions are required in addition to Docker. This task is a blocking prerequisite for all module authoring tasks (pilot-006 and all M1+ modules).",
+  "objective": "Implement a CI harness that builds Docker and Apptainer/Singularity container recipes from pinned base images, runs smoke tests on a schedule, detects upstream drift marking lessons stale, and wires in the dataset-catalog validator, link/citation checker, and Quarto/papermill executable-example renderer as CI gates.",
+  "acceptanceCriteria": [
+    "Builds each recipe from a base image pinned by digest (SHA256); pins package versions using a conda/mamba environment.yml with explicit versions or a lockfile.",
+    "Produces both a Dockerfile and an Apptainer/Singularity definition for every exercise/example recipe; both build successfully and pass a smoke test (container launches and a check script exits 0).",
+    "Scheduled CI rebuild (e.g., weekly) detects upstream base-image drift and marks affected lessons as stale, opening or commenting on a maintenance issue.",
+    "CI wires in: (1) dataset-catalog validator asserting every example references a PASS-gate entry, (2) link/citation checker asserting no dead links and flagged assertions carry citations, (3) executable-example renderer (Quarto render or papermill) verifying notebooks/documents produce output without error.",
+    "Repo tooling passes pnpm build && pnpm test && pnpm lint; code licensed MIT; DCO signed off; no secrets, tokens, or credentials embedded in any container recipe or CI config.",
+    "CI configuration committed in the repo; reviewed and signed off by Technical reviewer."
+  ],
+  "resources": [
+    "PLAN.md (Solution approach & architecture — CI / runnable means runnable)",
+    "template-004 (module template; exercises follow its structure)",
+    "datagate-002 (dataset-catalog validator spec)",
+    "Docker documentation (https://docs.docker.com/)",
+    "Apptainer/Singularity documentation (https://apptainer.org/docs/)",
+    "conda/mamba environment.yml pinning (https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)",
+    "Quarto CLI (https://quarto.org/); papermill (https://papermill.readthedocs.io/)"
+  ],
+  "output": "A CI harness committed to the project repo as a PR: Dockerfile + Apptainer definition templates, a base-image pinning policy, a scheduled rebuild workflow (GitHub Actions or equivalent), and wired-in validators for dataset catalog, links/citations, and executable examples; pnpm build/test/lint green.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

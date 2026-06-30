@@ -1,0 +1,34 @@
+{
+  "id": "reproducibility-curriculum-trainer-018",
+  "title": "Instructor guide + train-the-trainer kit",
+  "project": "reproducibility-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["cancer-research", "open-science", "education", "reproducibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "For the curriculum to scale beyond its authors, instructors who were not involved in its creation must be able to set up and teach it independently. A train-the-trainer kit addresses the risk of the material being unadoptable without the original authors — a common failure mode for open educational resources. The kit enables external adopter (adopt-020) and drives the M3 success metric of >= 1 confirmed external adoption. Depends on: cohort-017 (must be taught at least once before a train-the-trainer kit can be grounded in real experience).",
+  "objective": "Author an instructor guide and reusable train-the-trainer kit that enables a new instructor to set up, prepare, and deliver the curriculum without the original authors, covering all modules, accessibility requirements, timing, and common misconceptions; reviewed by Educator and Steward reviewers.",
+  "acceptanceCriteria": [
+    "Instructor guide covers: setup (software, containers, repository checkout), timing per module (estimated minutes per section), common misconceptions and how to address them, and accessibility guidance per module.",
+    "Train-the-trainer package is reusable and self-contained: includes slide templates or presenter notes, instructor checklists for each module, and a guide for using the pre/post assessment (assessment-011).",
+    "Package enables a new instructor to teach the curriculum without contacting the original authors; all prerequisites (tools, accounts, data access) are documented.",
+    "Reviewed and signed off by Educator reviewer and Steward reviewer.",
+    "Committed to the project repo with DCO sign-off; CC-BY-4.0 license stated; accessible format."
+  ],
+  "resources": [
+    "PLAN.md (Governance — Steward role; Sustainability & maintenance)",
+    "cohort-017 (first taught cohort — empirical basis for timing/misconceptions)",
+    "The Carpentries Instructor Training (https://carpentries.github.io/instructor-training/)",
+    "TASKS.md (trainer-018 acceptance criteria)",
+    "All published modules (pilot-006, versioning-008, provenance-009, analysis-010, sharing-014)"
+  ],
+  "output": "INSTRUCTOR-GUIDE.md and TRAIN-THE-TRAINER.md committed to the project repo; CC-BY-4.0; Educator and Steward reviewer sign-offs.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
