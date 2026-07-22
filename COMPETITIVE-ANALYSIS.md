@@ -247,7 +247,7 @@ unoccupied gap is precisely:
   run it on their capstone) and an outcome-verifier (confirms a "reproducible artifact" claim in the
   outcome ledger). Reusable across every sibling project and a genuine differentiator.
 - **Outcome-ledger / artifact-verifier service** — generalizes the "externally verifiable
-  reproducible artifact" check (container builds, analysis re-runs) into a shared Elyos capability.
+  reproducible artifact" check (container builds, analysis re-runs) into a shared Hee-Lee Oss capability.
 
 ---
 

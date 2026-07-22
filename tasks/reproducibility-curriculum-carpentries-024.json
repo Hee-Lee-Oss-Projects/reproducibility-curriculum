@@ -18,7 +18,7 @@
     "Lesson builds successfully with the Carpentries Workbench toolchain (sandpaper::build_lesson() or equivalent); no build errors.",
     "Carpentries lesson metadata completed: config.yaml with lesson title, description, instructor names, learner profiles, and required software.",
     "All existing acceptance criteria (WCAG 2.2 AA accessibility, i18n-readiness, CI green for exercises) maintained in the Carpentries format.",
-    "A PR opened against the Elyos Projects repo (and optionally a Carpentries Incubator submission PR) with the Carpentries-format lesson; CI green; code MIT licensed; DCO signed off.",
+    "A PR opened against the Hee-Lee Oss Projects repo (and optionally a Carpentries Incubator submission PR) with the Carpentries-format lesson; CI green; code MIT licensed; DCO signed off.",
     "Reviewed and signed off by Educator reviewer; Technical reviewer confirms CI green."
   ],
   "resources": [

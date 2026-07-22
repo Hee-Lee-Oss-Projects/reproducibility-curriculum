@@ -22,9 +22,9 @@
     "Document is accessible (plain language, heading structure) and i18n-ready; committed with DCO sign-off."
   ],
   "resources": [
-    "C:\\code\\elyos\\planning\\projects\\reproducibility-curriculum\\PLAN.md",
-    "C:\\code\\elyos\\docs\\good-deed-definition.md",
-    "C:\\code\\elyos\\planning\\ROADMAP.md",
+    "C:\\code\\hee-lee-oss\\planning\\projects\\reproducibility-curriculum\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\docs\\good-deed-definition.md",
+    "C:\\code\\hee-lee-oss\\planning\\ROADMAP.md",
     "The Turing Way (reproducible, ethical, collaborative data science)",
     "Bloom's taxonomy (revised); Understanding by Design (Wiggins & McTighe)",
     "NIH Rigor & Reproducibility guidance; Reproducibility Project: Cancer Biology"

@@ -6,7 +6,7 @@ Wet-lab and translational cancer scientists routinely produce results that are d
 
 **Definition of shipped:** reviews; (2) its containers/exercises/examples are **green in the last scheduled CI run**; (3) every example dataset has a committed PASS gate artifact; (4) it is **taught to or adopted by real learners** (a run delivered, or a named partner teaches/embeds it) with the outcome re
 
-This is an **Elyos** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/elyos
+This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
@@ -15,8 +15,8 @@ This is an **Elyos** good-deed project. Contributors pull a task, do it with the
 
 ## Contribute
 ```bash
-elyos browse
-elyos next --repo Elyos-Projects/reproducibility-curriculum --no-fork
+hee-lee-oss browse
+hee-lee-oss next --repo Hee-Lee-Oss-Projects/reproducibility-curriculum --no-fork
 ```
 
 ## Licensing & review

@@ -180,7 +180,7 @@ unit sized for a single donated AI session plus review, and instantiates one **m
   (conda/mamba `environment.yml` with explicit versions; lockfiles where supported).
 - **Executable examples** as Quarto/Jupyter documents rendered in CI (e.g. via Quarto render /
   papermill) so a broken example fails the build.
-- **TypeScript/ESM + pnpm** per Elyos conventions for any repo tooling (link checkers, the catalog
+- **TypeScript/ESM + pnpm** per Hee-Lee Oss conventions for any repo tooling (link checkers, the catalog
   validator, the outcome-ledger schema check). The teaching examples themselves are in the learners'
   languages (R/Python/shell) because that is what the audience uses.
 - No runtime services; everything runs locally, in a container, or in CI.
@@ -400,7 +400,7 @@ per-example task is blocked on its own committed gate artifact before authoring 
 - **Open data sources (per-entry gated):** GDC/TCGA open tier, DepMap (CC-BY 4.0), GEO/SRA public
   series, cBioPortal public studies, ICGC open tier, Ensembl, gnomAD, Cellosaurus, plus synthetic
   data. (COSMIC/OncoKB excluded as example data; dbGaP/EGA/controlled denied.)
-- **Elyos pieces:** Task JSON schema (`packages/schema`), the donated-lane CLI workspace/PR flow
+- **Hee-Lee Oss pieces:** Task JSON schema (`packages/schema`), the donated-lane CLI workspace/PR flow
   (`packages/cli`), the good-deed definition + refusal guardrails. No funded-lane/runner dependency
   (donated lane).
 - **CI:** a scheduled pipeline (container builds, exercise checks, example renders, catalog + link
@@ -427,7 +427,7 @@ per-example task is blocked on its own committed gate artifact before authoring 
   scratch dir and never commit raw data, even aggregate. No individual-level data is ever fetched.
 - **Secrets handling:** exercises require no credentials by default. If an open-data endpoint ever
   needs a token (e.g. a courtesy API key), it is supplied by the user at runtime and must never be
-  written into logs, receipts, containers, or committed files (per Elyos rules). Container recipes
+  written into logs, receipts, containers, or committed files (per Hee-Lee Oss rules). Container recipes
   embed no secrets.
 - **Abuse/misuse prevention:** refuse and flag any task that would (a) steer an example toward
   controlled/identifiable data, (b) launder a non-open dataset as open, (c) re-identify individuals,
@@ -463,10 +463,10 @@ per-example task is blocked on its own committed gate artifact before authoring 
 
 ## References
 
-- Elyos work rules — `C:\code\elyos\CLAUDE.md`
-- Good Deed Definition + risk tiers — `C:\code\elyos\docs\good-deed-definition.md`
-- Task JSON schema — `C:\code\elyos\packages\schema\src\schemas.ts`
-- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\elyos\planning\ROADMAP.md`
+- Hee-Lee Oss work rules — `C:\code\hee-lee-oss\CLAUDE.md`
+- Good Deed Definition + risk tiers — `C:\code\hee-lee-oss\docs\good-deed-definition.md`
+- Task JSON schema — `C:\code\hee-lee-oss\packages\schema\src\schemas.ts`
+- Portfolio roadmap (Track 8 cancer guardrails) — `C:\code\hee-lee-oss\planning\ROADMAP.md`
 - Dataset allow/flag/deny catalog — `./DATASET-CATALOG.md` (to be created in M0)
 - The Turing Way — guide to reproducible, ethical, collaborative data science
 - The Carpentries (Software/Data Carpentry) — lesson program & pedagogy
@@ -508,7 +508,7 @@ in the plan and tasks above.
 12. **Dual licensing stated per deliverable**: CC-BY-4.0 content, MIT code/containers — surfaced in
     scope, tasks, and the example JSON.
 13. **Definition of Shipped = taught/adopted**, with learners producing artifacts — not merged —
-    matching the Elyos "delivered, not merged" bar.
+    matching the Hee-Lee Oss "delivered, not merged" bar.
 14. **Steward (last-mile) role** added to own cohort delivery and outcome recording.
 15. **Blocking reviewer roles named** (Data & licensing, domain cancer-bioinformatics, educator) and
     required to be filled **before** the M0 pilot is reviewed.
